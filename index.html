@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  
+</head>
+<body>
+<div class="main">
+  <span class="logo"></span>
+  <div class="container">
+    <div class="main_section">
+
+      <div class="bill">
+        <h3 class="main_section_text">Bill</h3>
+        <input type="number" class="bill_input main_section_input">
+      </div>
+
+      <div class="tip"> 
+        <h3 class="main_section_text">Select Tip %</h3>
+        <div class="tip_grid">
+          <button class="tip_grid_button"></button>
+          <button class="tip_grid_button"></button>
+          <button class="tip_grid_button"></button>
+          <button class="tip_grid_button"></button>
+          <button class="tip_grid_button"></button>
+          <label>
+            <input type="number" class="tip_grid_custom">
+            <span>Custom</span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="people">
+        <h3 class="main_section_text">Number of people</h3>
+        <input type="number" class="people_input main_section_input">
+      </div>
+
+    </div>
+
+    <div class="result">
+      <div class="tip_result">
+        <p class="result_text">Tip Amount <span>/ person</span></p>
+        <p class="result_number" id="tip_result"></p>
+      </div>
+      <div class="total_result">
+        <p class="result_text">Total <span>/ person</span></p>
+        <p class="result_number" id="total_result"></p>
+      </div>
+      <button class="reset"> RESET </button>
+    </div>
+
+  </div>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
