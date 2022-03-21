@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -12,33 +15,38 @@
 </head>
 <body>
 <div class="main">
-  <span class="logo"></span>
+  <img class="logo" src="/images/logo.svg" alt="logo">
   <div class="container">
     <div class="main_section">
 
       <div class="bill">
         <h3 class="main_section_text">Bill</h3>
         <input type="number" class="bill_input main_section_input">
+          
       </div>
 
       <div class="tip"> 
         <h3 class="main_section_text">Select Tip %</h3>
         <div class="tip_grid">
-          <button class="tip_grid_button"></button>
-          <button class="tip_grid_button"></button>
-          <button class="tip_grid_button"></button>
-          <button class="tip_grid_button"></button>
-          <button class="tip_grid_button"></button>
-          <label>
+          <button class="tip_grid_button">5<span>%</span></button>
+          <button class="tip_grid_button">10<span>%</span></button>
+          <button class="tip_grid_button">15<span>%</span></button>
+          <button class="tip_grid_button">25<span>%</span></button>
+          <button class="tip_grid_button">50<span>%</span></button>
+          <label class="tip_grid_button label">
             <input type="number" class="tip_grid_custom">
-            <span>Custom</span>
+            <span class="tip_custom">Custom</span>
           </label>
         </div>
       </div>
       
       <div class="people">
-        <h3 class="main_section_text">Number of people</h3>
+        <div class="people_col">
+          <h3 class="main_section_text people_txt">Number of people</h3>
+          <p class="error_msg hide">Can't be zero</p>
+        </div>
         <input type="number" class="people_input main_section_input">
+          
       </div>
 
     </div>
@@ -56,12 +64,14 @@
     </div>
 
   </div>
-</div>
-  
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#"> Dave Hernandez</a>.
   </div>
+</div>
+  
+  
   <script src="./app.js"></script>
 </body>
 </html>
